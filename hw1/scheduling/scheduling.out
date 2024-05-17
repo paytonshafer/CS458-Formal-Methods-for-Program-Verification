@@ -1,0 +1,37 @@
+sat
+(
+  (define-fun p41 () Bool
+    false)
+  (define-fun p44 () Bool
+    true)
+  (define-fun p22 () Bool
+    false)
+  (define-fun p34 () Bool
+    false)
+  (define-fun p42 () Bool
+    false)
+  (define-fun p43 () Bool
+    false)
+  (define-fun p12 () Bool
+    true)
+  (define-fun p31 () Bool
+    false)
+  (define-fun p32 () Bool
+    true)
+  (define-fun p13 () Bool
+    false)
+  (define-fun p21 () Bool
+    false)
+  (define-fun p11 () Bool
+    false)
+  (define-fun p14 () Bool
+    false)
+  (define-fun p24 () Bool
+    false)
+  (define-fun p33 () Bool
+    false)
+  (define-fun p23 () Bool
+    true)
+)
+unsat
+(error "line 67 column 10: model is not available")

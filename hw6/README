@@ -1,0 +1,10 @@
+For each of the methods in the three files, 
+give a precondition (requires), 
+a postcondition (ensures) expressing what the method does, 
+a loop invariant (invariant) 
+and a variant (decreases).  
+Dafny will find its own variant, but I want you to still give it explicitly.
+
+For the first two problems, 
+show the result of the bubbling up process for all the paths involving the invariant, 
+placing it in the comments of the code as shown. 

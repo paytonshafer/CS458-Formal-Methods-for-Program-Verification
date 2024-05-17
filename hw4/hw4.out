@@ -1,0 +1,109 @@
+NOTE: This output file has been altered to hold the models for each problem
+
+sat
+(
+  ;; universe for Person:
+  ;;   Person!val!0 Person!val!4 Person!val!3 Person!val!2 Person!val!1 
+  ;; -----------
+  ;; definitions for universe elements:
+  (declare-fun Person!val!0 () Person)
+  (declare-fun Person!val!4 () Person)
+  (declare-fun Person!val!3 () Person)
+  (declare-fun Person!val!2 () Person)
+  (declare-fun Person!val!1 () Person)
+  ;; cardinality constraint:
+  (forall ((x Person))
+          (or (= x Person!val!0)
+              (= x Person!val!4)
+              (= x Person!val!3)
+              (= x Person!val!2)
+              (= x Person!val!1)))
+  ;; -----------
+  (define-fun M ((x!0 Person) (x!1 Person)) bool
+    (or (and (= x!0 Person!val!2)
+             (not (= x!0 Person!val!4))
+             (not (= x!0 Person!val!1))
+             (= x!1 Person!val!3)
+             (not (= x!1 Person!val!2))
+             (not (= x!1 Person!val!4))
+             (not (= x!1 Person!val!1)))
+        (and (= x!0 Person!val!2)
+             (not (= x!0 Person!val!4))
+             (not (= x!0 Person!val!1))
+             (= x!1 Person!val!4)
+             (not (= x!1 Person!val!1)))
+        (and (not (= x!0 Person!val!3))
+             (not (= x!0 Person!val!2))
+             (not (= x!0 Person!val!4))
+             (not (= x!0 Person!val!1))
+             (= x!1 Person!val!1))))
+)
+sat
+(
+  ;; universe for Person:
+  ;;   Person!val!0 Person!val!4 Person!val!3 Person!val!2 Person!val!1 
+  ;; -----------
+  ;; definitions for universe elements:
+  (declare-fun Person!val!0 () Person)
+  (declare-fun Person!val!4 () Person)
+  (declare-fun Person!val!3 () Person)
+  (declare-fun Person!val!2 () Person)
+  (declare-fun Person!val!1 () Person)
+  ;; cardinality constraint:
+  (forall ((x Person))
+          (or (= x Person!val!0)
+              (= x Person!val!4)
+              (= x Person!val!3)
+              (= x Person!val!2)
+              (= x Person!val!1)))
+  ;; -----------
+  (define-fun ann () Person
+    Person!val!4)
+  (define-fun M ((x!0 Person) (x!1 Person)) bool
+    (or (and (= x!0 Person!val!4)
+             (not (= x!0 Person!val!2))
+             (= x!1 Person!val!3)
+             (not (= x!1 Person!val!4))
+             (not (= x!1 Person!val!2)))
+        (and (= x!0 Person!val!4)
+             (not (= x!0 Person!val!2))
+             (not (= x!1 Person!val!1))
+             (not (= x!1 Person!val!3))
+             (not (= x!1 Person!val!4))
+             (not (= x!1 Person!val!2)))
+        (and (= x!0 Person!val!4)
+             (not (= x!0 Person!val!2))
+             (= x!1 Person!val!2))
+        (and (not (= x!0 Person!val!1))
+             (not (= x!0 Person!val!3))
+             (not (= x!0 Person!val!4))
+             (not (= x!0 Person!val!2))
+             (= x!1 Person!val!1)
+             (not (= x!1 Person!val!3))
+             (not (= x!1 Person!val!4))
+             (not (= x!1 Person!val!2)))))
+  (define-fun Age ((x!0 Person)) Int
+    (let ((a!1 (ite (and (= x!0 Person!val!1)
+                         (not (= x!0 Person!val!3))
+                         (not (= x!0 Person!val!4))
+                         (not (= x!0 Person!val!2)))
+                    1
+                    15)))
+    (let ((a!2 (ite (and (not (= x!0 Person!val!1))
+                         (not (= x!0 Person!val!3))
+                         (not (= x!0 Person!val!4))
+                         (not (= x!0 Person!val!2)))
+                    2
+                    a!1)))
+    (let ((a!3 (ite (and (= x!0 Person!val!4) (not (= x!0 Person!val!2)))
+                    7
+                    (ite (= x!0 Person!val!2) 3 a!2))))
+      (ite (and (= x!0 Person!val!3)
+                (not (= x!0 Person!val!4))
+                (not (= x!0 Person!val!2)))
+           4
+           a!3)))))
+)
+unsat
+(mother-of-everyone nobody-has-mother)
+unknown

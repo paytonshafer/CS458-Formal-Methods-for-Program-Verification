@@ -1,0 +1,47 @@
+HW 1
+
+General:
+What to turn in:  Once this is working, submit your z3 file and the output file on moodle.  Your z3 file should contain the following:
+
+A. Your Z3 code.
+
+B. Comments on each section of your code, indicating the meaning of your variables and the meaning of your assertions. 
+
+C. A comment at the end of your code explaining the meaning of your output in English. Do not use any mathematical notation or z3 notation in your explanation.  Just say what the model means, or what the nonexistence of a model means.  Use my scheduling problem for an example of the format.
+
+Scheduling:
+Use Z3 to solve the following scheduling problem.  There are four classes.  There are four periods.  Every class must be scheduled. In general, it is ok to schedule more than one class at the same time. But we have the following constraints.
+
+variables: p11, p12, p13, p14, p21, ... , p43, p44
+
+A. All classes must be assigned a period.
+    p11 | p12 | p13 | p14 & ... & p41 | ... | p44 , bc of & put on seperate lines
+
+B. No class may be assigned more than one period.
+    (p11 + p12 + p13 + p14) & 
+
+C. Class 4 does not occur at the same time as Class 2.
+    (!(p41 & p21)) & (!(p42 & p22)) & (!(p43 & p23)) & (!(p44 & p24)) 
+
+D. Class 3 occurs before Class 4, not necessarily immediately before.
+
+E. Class 1 directly precedes Class 2.
+
+F. Class 3 is at the same time as Class 1.
+
+G. Class 3 is not in the first period.
+
+Use Z3 to determine a schedule. Now add the constraint that Class 4 cannot occur in Period 4, and run Z3 again.
+
+Note that you will need two output explanations for this problem.  The second output explanation is what happens when you assert that Class 4 cannot be in Period 4.  
+
+Graph coloring:
+A graph consists of vertices (represented by numbers) and edges (represented by pairs of numbers) connecting two vertices.  In a graph coloring problem, there are three colors and we must give each vertex a color so that any two vertices connected by an edge are different colors.   
+
+Use Z3 to decide whether each of the following graphs can be colored with three colors:
+
+A.  V = {1,2,3,4,5,6}     E = {(1,2),(1,3),(2,3),(2,4),(2,5),(3,5),(3,6),(4,5),(5,6)}
+
+B.  V = {1,2,3,4}     E = {(1,2),(1,3),(1,4),(2,3),(2,4),(3,4)}
+
+Turn in this problem the same way as the other one. Note that Part A and Part B are different problems, so you need two different files.

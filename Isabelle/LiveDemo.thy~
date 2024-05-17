@@ -1,0 +1,44 @@
+theory LiveDemo
+imports Main
+begin
+
+(*Add function*)
+fun add :: "nat \<Rightarrow> nat \<Rightarrow> nat" where
+  "add 0 n = n" |
+  "add (Suc m) n = Suc (add m n)"
+
+(*Proof for add is communitive (x + y = y + x) *)
+
+
+(*Start with this*)
+lemma add_comm [simp]: "add x y = add y x"
+oops
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(*Define binary tree*)
+datatype 'a tree = Leaf | Node " 'a tree" 'a " 'a tree"
+
+(*Define sum nodes of nat bt function*)
+fun sum :: "nat tree \<Rightarrow> nat" where
+  "sum _ = 0"
+
+(*Simple proof for sum always positive*)
+
+end

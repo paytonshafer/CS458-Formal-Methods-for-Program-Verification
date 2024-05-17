@@ -1,0 +1,58 @@
+HW3 CS458
+
+1. Solve the following logic puzzle using Z3:
+
+http://www.logic-puzzles.org/pdf/T506XA.pdf
+
+soln:
+; The output of SAT means there is a solution to the puzzle and it is as follows:
+; 1.8 cynthia firefox kodak
+; 3.2 audrey safari polaroid
+; 4.0 kassandra opera canon
+; 7.0 adam internet-exp casio
+
+2. Solve the following cryptarithmetic problem using Z3.  Make it give all the solutions.  Each of the letters is a digit from 0 to 9, and no two letters can be the same digit.  Also give a constraint that r > n.  The numbers are written as a human would write them, so they cannot begin with a zero.  As you get additional solutions, make sure you completely rule out the previous solution.
+
+  clar
++kson
+-----
+class
+
+soln: 
+; The result of SAT means there is a given solution as follows:
+;                              0 1 1 
+;   1037                       1 0 3 7
+;  +9285   or with carries:  + 9 2 5 8
+;  -----                    -----------
+;  10322                     1 0 3 2 2
+
+; c = 1
+; l = 0
+; a = 3
+; r = 7
+; k = 9
+; s = 2
+; o = 8
+; n = 5
+
+...
+
+; The result of SAT means there is another solution as follows:
+;                              0 1 1 
+;   1047                       1 0 4 7
+;  +9386   or with carries:  + 9 3 8 6
+;  -----                    -----------
+;  10433                     1 0 4 3 3
+
+; c = 1
+; l = 0
+; a = 4
+; r = 7
+; k = 9
+; s = 3
+; o = 8
+; n = 6
+
+...
+
+; The result of UNSAT means there is no more solutions

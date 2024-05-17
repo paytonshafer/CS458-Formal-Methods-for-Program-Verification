@@ -1,0 +1,70 @@
+;Payton Shafer, HW1, Question 1
+
+;pij means class i in period j
+(declare-const p11 Bool)
+(declare-const p12 Bool)
+(declare-const p13 Bool)
+(declare-const p14 Bool)
+(declare-const p21 Bool)
+(declare-const p22 Bool)
+(declare-const p23 Bool)
+(declare-const p24 Bool)
+(declare-const p31 Bool)
+(declare-const p32 Bool)
+(declare-const p33 Bool)
+(declare-const p34 Bool)
+(declare-const p41 Bool)
+(declare-const p42 Bool)
+(declare-const p43 Bool)
+(declare-const p44 Bool)
+
+;All classes assigned a period
+;Make sure atleast one of them is true
+(assert (or p11 p12 p13 p14))
+(assert (or p21 p22 p23 p24))
+(assert (or p31 p32 p33 p34))
+(assert (or p41 p42 p43 p44))
+
+;FAILED
+;No classes assigned more than one period
+;using xor to ensure 1 or 3 is true then ruling out all the cases where 3 may be true
+(assert (and (xor p11 p12 p13 p14) (not (and p11 p12 p13)) (not (and p11 p13 p14)) (not (and p11 p12 p14)) (not (and p12 p13 p14))))
+(assert (and (xor p21 p22 p23 p24) (not (and p21 p22 p23)) (not (and p21 p23 p24)) (not (and p21 p22 p24)) (not (and p42 p23 p24)))) 
+(assert (and (xor p31 p32 p33 p34) (not (and p31 p32 p33)) (not (and p31 p33 p34)) (not (and p31 p32 p34)) (not (and p32 p33 p34))))
+(assert (and (xor p41 p42 p43 p44) (not (and p41 p42 p43)) (not (and p41 p43 p44)) (not (and p41 p42 p44)) (not (and p42 p43 p44))))
+
+;Class 4 does not occur at the same time as Class 2
+;Ensure p4x anf p2x are never both true (x is {1,2,3,4})
+(assert (not(and p41 p21)))
+(assert (not(and p42 p22)))
+(assert (not(and p43 p23)))
+(assert (not(and p44 p24)))
+
+;Class 3 occurs before Class 4, not necessarily immediately before
+;Check each occurence when class 3 is before class 4 is true atleast once
+(assert (or (and p31 p42) (and p31 p43) (and p31 p44) (and p32 p43) (and p32 p44) (and p33 p44)))
+
+;Class 1 directly precedes Class 2
+;Checking the cases where class 1 precedes class 2 and ensures theres one
+(assert (or (and p11 p22) (and p12 p23) (and p13 p24)))
+
+;Class 3 is at the same time as Class 1
+;Check to be sure for atleast one period both classes true in it
+(assert (or (and p11 p31) (and p12 p32) (and p13 p33) (and p14 p34)))
+
+;Class 3 is not in the first period
+;Ensure that class 3 period 1 is false
+(assert (not p31))
+
+;Output 1
+(check-sat)
+(get-model)
+;This output means class 1 in period 2, class 2 in period 3, class 3 in period 2, class 4 in period 4
+
+;Class 4 cannot occur in Period 4
+(assert (not p44))
+
+;Output 2
+(check-sat)
+(get-model)
+;This output means there is no schedule

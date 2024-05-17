@@ -1,0 +1,25 @@
+HW2
+Same general as hw1
+
+Mutilated Checkerboard:
+1. Solve the mutilated checkerboard problem using z3.  You have an nxn checkerboard with two missing squares.  You have dominoes that cover two horizontal or two vertical squares.  You need to determine if you can cover all the squares without having two dominoes on the same square.
+
+Turn in the z3 file and output file, including comments and output description as in Assignment 1.  The z3 code you need to turn in will attempt to solve the problem for a 4x4 checkerboard with positions (2,4) and (3,4) missing, and for a 4x4 checkerboard with positions (1,1) and (4,4) missing.  So you will need two files.
+
+I suggest you write a program that creates a z3 file solving this problem for a general nxn checkerboard and allows you to choose which pieces are missing.  But I am only going to check your z3 code for the two cases mentioned above.
+
+to run python: python3 mc.py 4 24,34 mc1
+and: python3 mc.py 4 11,44 mc2
+
+Sudoku solver:
+2. Solve the sudoku problem using z3.  You have an n^2 x n^2 grid.  Each cell in the grid contains one number, 1 through n.  No row can contain a duplicate number.  No column can contain a duplicate number.  None of the boxes can contain a duplicate number (ask me if you have a question about what box means).  There are certain initial numbers provided.  Your z3 file must determine how the rest of the grid can be filled in, or if it cannot be filled in.
+
+Turn in the z3 file and output file, including comments and output description as in Assignment 1.  The z3 code you need to turn in will attempt to solve the problem for the following 4x4 grid:
+24
+? 1 3 ?
+2 ? ? ?
+? ? ? 3
+? 2 1 4
+I suggest you write a program that creates a z3 file solving this problem for a general n^2 x n^2 grid and asks the user for the initial configuration.  But I am only going to check your z3 code for the case mentioned above.
+
+To run python to gen z3: python3 sudoku.py 2 c211,c313,c122,c433,c242,c341,c444

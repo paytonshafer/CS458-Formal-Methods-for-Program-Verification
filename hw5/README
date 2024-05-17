@@ -1,0 +1,15 @@
+Two people are guessing the price of a product.  The one who comes closest to the price without going over wins the product.  We need a method to solve this problem.  The method should return the value of the winning guess (for a tie it doesn't matter which it returns).  If both guesses go over, it returns -1. 
+
+The attached file contains a predicate indicating correctness for the problem, and four methods to solve it.  
+
+1. Fill in the predicate to correctly specify the correctness of the methods.
+
+2. State how many paths there are through each of the first three methods.
+
+2. For the first three methods, give values for guess1, guess2, price and r for which it returns the wrong answer.  
+
+4. Bubble up the postcondition for the path taken by the above values.
+
+5. Provide code for the fourth method so it is correct.
+
+Note: There is a place for each of these in the file.  Fill them in in the correct spots and submit your file.

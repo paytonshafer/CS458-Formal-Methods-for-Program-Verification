@@ -1,0 +1,52 @@
+sat
+(
+  (define-fun l () Int
+    0)
+  (define-fun n () Int
+    5)
+  (define-fun o () Int
+    8)
+  (define-fun k () Int
+    9)
+  (define-fun s () Int
+    2)
+  (define-fun c () Int
+    1)
+  (define-fun a () Int
+    3)
+  (define-fun carry2 () Int
+    1)
+  (define-fun r () Int
+    7)
+  (define-fun carry1 () Int
+    1)
+  (define-fun carry3 () Int
+    0)
+)
+sat
+(
+  (define-fun n () Int
+    6)
+  (define-fun o () Int
+    8)
+  (define-fun carry2 () Int
+    1)
+  (define-fun l () Int
+    0)
+  (define-fun k () Int
+    9)
+  (define-fun carry1 () Int
+    1)
+  (define-fun r () Int
+    7)
+  (define-fun carry3 () Int
+    0)
+  (define-fun s () Int
+    3)
+  (define-fun c () Int
+    1)
+  (define-fun a () Int
+    4)
+)
+unsat
+(error "line 111 column 10: model is not available")

@@ -1,0 +1,33 @@
+sat
+(
+  (define-fun minv ((x!0 Int)) name
+    (ite (= x!0 2) audrey
+    (ite (= x!0 1) cynthia
+    (ite (= x!0 3) kass
+      adam))))
+  (define-fun m ((x!0 name)) Int
+    (ite (= x!0 audrey) 2
+    (ite (= x!0 kass) 3
+    (ite (= x!0 cynthia) 1
+      4))))
+  (define-fun binv ((x!0 browser)) name
+    (ite (= x!0 ie) adam
+    (ite (= x!0 ff) cynthia
+    (ite (= x!0 safari) audrey
+      kass))))
+  (define-fun b ((x!0 name)) browser
+    (ite (= x!0 audrey) safari
+    (ite (= x!0 cynthia) ff
+    (ite (= x!0 kass) opera
+      ie))))
+  (define-fun cinv ((x!0 camera)) name
+    (ite (= x!0 canon) kass
+    (ite (= x!0 kodak) cynthia
+    (ite (= x!0 polaroid) audrey
+      adam))))
+  (define-fun c ((x!0 name)) camera
+    (ite (= x!0 audrey) polaroid
+    (ite (= x!0 cynthia) kodak
+    (ite (= x!0 kass) canon
+      casio))))
+)

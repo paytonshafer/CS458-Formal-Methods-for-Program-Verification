@@ -1,0 +1,1461 @@
+sat
+(
+  (define-fun c666 () Bool
+    false)
+  (define-fun c216 () Bool
+    false)
+  (define-fun c947 () Bool
+    false)
+  (define-fun c563 () Bool
+    false)
+  (define-fun c328 () Bool
+    false)
+  (define-fun c727 () Bool
+    false)
+  (define-fun c548 () Bool
+    false)
+  (define-fun c651 () Bool
+    false)
+  (define-fun c459 () Bool
+    false)
+  (define-fun c383 () Bool
+    false)
+  (define-fun c262 () Bool
+    false)
+  (define-fun c185 () Bool
+    false)
+  (define-fun c397 () Bool
+    false)
+  (define-fun c764 () Bool
+    false)
+  (define-fun c125 () Bool
+    false)
+  (define-fun c259 () Bool
+    false)
+  (define-fun c519 () Bool
+    false)
+  (define-fun c772 () Bool
+    false)
+  (define-fun c199 () Bool
+    false)
+  (define-fun c862 () Bool
+    false)
+  (define-fun c943 () Bool
+    false)
+  (define-fun c661 () Bool
+    false)
+  (define-fun c814 () Bool
+    false)
+  (define-fun c431 () Bool
+    false)
+  (define-fun c452 () Bool
+    false)
+  (define-fun c828 () Bool
+    false)
+  (define-fun c935 () Bool
+    false)
+  (define-fun c211 () Bool
+    false)
+  (define-fun c544 () Bool
+    false)
+  (define-fun c479 () Bool
+    false)
+  (define-fun c279 () Bool
+    false)
+  (define-fun c719 () Bool
+    false)
+  (define-fun c369 () Bool
+    false)
+  (define-fun c228 () Bool
+    false)
+  (define-fun c421 () Bool
+    true)
+  (define-fun c841 () Bool
+    false)
+  (define-fun c712 () Bool
+    false)
+  (define-fun c366 () Bool
+    false)
+  (define-fun c325 () Bool
+    false)
+  (define-fun c822 () Bool
+    false)
+  (define-fun c853 () Bool
+    false)
+  (define-fun c257 () Bool
+    false)
+  (define-fun c749 () Bool
+    false)
+  (define-fun c392 () Bool
+    true)
+  (define-fun c874 () Bool
+    true)
+  (define-fun c786 () Bool
+    false)
+  (define-fun c451 () Bool
+    false)
+  (define-fun c963 () Bool
+    false)
+  (define-fun c153 () Bool
+    false)
+  (define-fun c948 () Bool
+    false)
+  (define-fun c536 () Bool
+    false)
+  (define-fun c999 () Bool
+    false)
+  (define-fun c887 () Bool
+    false)
+  (define-fun c829 () Bool
+    false)
+  (define-fun c836 () Bool
+    false)
+  (define-fun c649 () Bool
+    false)
+  (define-fun c274 () Bool
+    false)
+  (define-fun c315 () Bool
+    false)
+  (define-fun c485 () Bool
+    false)
+  (define-fun c997 () Bool
+    false)
+  (define-fun c638 () Bool
+    true)
+  (define-fun c823 () Bool
+    false)
+  (define-fun c942 () Bool
+    false)
+  (define-fun c312 () Bool
+    false)
+  (define-fun c481 () Bool
+    false)
+  (define-fun c432 () Bool
+    false)
+  (define-fun c555 () Bool
+    false)
+  (define-fun c921 () Bool
+    false)
+  (define-fun c693 () Bool
+    false)
+  (define-fun c595 () Bool
+    false)
+  (define-fun c878 () Bool
+    false)
+  (define-fun c621 () Bool
+    false)
+  (define-fun c525 () Bool
+    false)
+  (define-fun c161 () Bool
+    false)
+  (define-fun c686 () Bool
+    false)
+  (define-fun c783 () Bool
+    false)
+  (define-fun c218 () Bool
+    false)
+  (define-fun c553 () Bool
+    false)
+  (define-fun c827 () Bool
+    true)
+  (define-fun c888 () Bool
+    true)
+  (define-fun c476 () Bool
+    false)
+  (define-fun c843 () Bool
+    false)
+  (define-fun c954 () Bool
+    false)
+  (define-fun c733 () Bool
+    false)
+  (define-fun c882 () Bool
+    false)
+  (define-fun c147 () Bool
+    false)
+  (define-fun c622 () Bool
+    false)
+  (define-fun c389 () Bool
+    true)
+  (define-fun c726 () Bool
+    false)
+  (define-fun c319 () Bool
+    false)
+  (define-fun c278 () Bool
+    true)
+  (define-fun c617 () Bool
+    false)
+  (define-fun c873 () Bool
+    false)
+  (define-fun c924 () Bool
+    false)
+  (define-fun c959 () Bool
+    false)
+  (define-fun c377 () Bool
+    false)
+  (define-fun c855 () Bool
+    false)
+  (define-fun c214 () Bool
+    false)
+  (define-fun c128 () Bool
+    false)
+  (define-fun c565 () Bool
+    false)
+  (define-fun c894 () Bool
+    false)
+  (define-fun c436 () Bool
+    true)
+  (define-fun c877 () Bool
+    false)
+  (define-fun c914 () Bool
+    false)
+  (define-fun c632 () Bool
+    false)
+  (define-fun c411 () Bool
+    false)
+  (define-fun c348 () Bool
+    false)
+  (define-fun c673 () Bool
+    false)
+  (define-fun c865 () Bool
+    false)
+  (define-fun c473 () Bool
+    false)
+  (define-fun c351 () Bool
+    false)
+  (define-fun c225 () Bool
+    false)
+  (define-fun c116 () Bool
+    false)
+  (define-fun c717 () Bool
+    false)
+  (define-fun c945 () Bool
+    true)
+  (define-fun c266 () Bool
+    false)
+  (define-fun c556 () Bool
+    false)
+  (define-fun c721 () Bool
+    false)
+  (define-fun c158 () Bool
+    false)
+  (define-fun c196 () Bool
+    false)
+  (define-fun c249 () Bool
+    true)
+  (define-fun c463 () Bool
+    false)
+  (define-fun c765 () Bool
+    false)
+  (define-fun c375 () Bool
+    false)
+  (define-fun c398 () Bool
+    false)
+  (define-fun c523 () Bool
+    true)
+  (define-fun c177 () Bool
+    false)
+  (define-fun c184 () Bool
+    false)
+  (define-fun c237 () Bool
+    true)
+  (define-fun c354 () Bool
+    false)
+  (define-fun c293 () Bool
+    false)
+  (define-fun c368 () Bool
+    false)
+  (define-fun c235 () Bool
+    false)
+  (define-fun c465 () Bool
+    true)
+  (define-fun c526 () Bool
+    false)
+  (define-fun c659 () Bool
+    false)
+  (define-fun c737 () Bool
+    false)
+  (define-fun c871 () Bool
+    false)
+  (define-fun c957 () Bool
+    false)
+  (define-fun c854 () Bool
+    false)
+  (define-fun c988 () Bool
+    false)
+  (define-fun c387 () Bool
+    false)
+  (define-fun c193 () Bool
+    false)
+  (define-fun c644 () Bool
+    false)
+  (define-fun c141 () Bool
+    false)
+  (define-fun c447 () Bool
+    false)
+  (define-fun c513 () Bool
+    false)
+  (define-fun c378 () Bool
+    false)
+  (define-fun c761 () Bool
+    false)
+  (define-fun c667 () Bool
+    false)
+  (define-fun c817 () Bool
+    false)
+  (define-fun c227 () Bool
+    false)
+  (define-fun c327 () Bool
+    false)
+  (define-fun c247 () Bool
+    false)
+  (define-fun c561 () Bool
+    false)
+  (define-fun c893 () Bool
+    false)
+  (define-fun c723 () Bool
+    false)
+  (define-fun c168 () Bool
+    true)
+  (define-fun c223 () Bool
+    false)
+  (define-fun c433 () Bool
+    false)
+  (define-fun c425 () Bool
+    false)
+  (define-fun c612 () Bool
+    false)
+  (define-fun c322 () Bool
+    false)
+  (define-fun c782 () Bool
+    true)
+  (define-fun c789 () Bool
+    false)
+  (define-fun c875 () Bool
+    false)
+  (define-fun c839 () Bool
+    false)
+  (define-fun c881 () Bool
+    false)
+  (define-fun c879 () Bool
+    false)
+  (define-fun c291 () Bool
+    false)
+  (define-fun c362 () Bool
+    false)
+  (define-fun c437 () Bool
+    false)
+  (define-fun c546 () Bool
+    false)
+  (define-fun c635 () Bool
+    false)
+  (define-fun c692 () Bool
+    false)
+  (define-fun c962 () Bool
+    false)
+  (define-fun c372 () Bool
+    false)
+  (define-fun c936 () Bool
+    false)
+  (define-fun c958 () Bool
+    true)
+  (define-fun c416 () Bool
+    false)
+  (define-fun c611 () Bool
+    false)
+  (define-fun c731 () Bool
+    false)
+  (define-fun c186 () Bool
+    false)
+  (define-fun c799 () Bool
+    false)
+  (define-fun c256 () Bool
+    false)
+  (define-fun c633 () Bool
+    false)
+  (define-fun c698 () Bool
+    false)
+  (define-fun c492 () Bool
+    false)
+  (define-fun c428 () Bool
+    false)
+  (define-fun c791 () Bool
+    false)
+  (define-fun c687 () Bool
+    false)
+  (define-fun c454 () Bool
+    false)
+  (define-fun c654 () Bool
+    false)
+  (define-fun c775 () Bool
+    false)
+  (define-fun c517 () Bool
+    true)
+  (define-fun c768 () Bool
+    false)
+  (define-fun c137 () Bool
+    false)
+  (define-fun c456 () Bool
+    false)
+  (define-fun c647 () Bool
+    false)
+  (define-fun c982 () Bool
+    false)
+  (define-fun c657 () Bool
+    false)
+  (define-fun c763 () Bool
+    true)
+  (define-fun c835 () Bool
+    false)
+  (define-fun c831 () Bool
+    false)
+  (define-fun c885 () Bool
+    false)
+  (define-fun c946 () Bool
+    false)
+  (define-fun c144 () Bool
+    true)
+  (define-fun c736 () Bool
+    false)
+  (define-fun c813 () Bool
+    false)
+  (define-fun c898 () Bool
+    false)
+  (define-fun c599 () Bool
+    false)
+  (define-fun c952 () Bool
+    false)
+  (define-fun c345 () Bool
+    false)
+  (define-fun c994 () Bool
+    false)
+  (define-fun c333 () Bool
+    false)
+  (define-fun c892 () Bool
+    false)
+  (define-fun c379 () Bool
+    false)
+  (define-fun c478 () Bool
+    false)
+  (define-fun c925 () Bool
+    false)
+  (define-fun c365 () Bool
+    false)
+  (define-fun c591 () Bool
+    false)
+  (define-fun c118 () Bool
+    false)
+  (define-fun c189 () Bool
+    false)
+  (define-fun c149 () Bool
+    false)
+  (define-fun c191 () Bool
+    false)
+  (define-fun c213 () Bool
+    true)
+  (define-fun c243 () Bool
+    false)
+  (define-fun c494 () Bool
+    false)
+  (define-fun c419 () Bool
+    true)
+  (define-fun c539 () Bool
+    false)
+  (define-fun c123 () Bool
+    false)
+  (define-fun c265 () Bool
+    false)
+  (define-fun c236 () Bool
+    false)
+  (define-fun c713 () Bool
+    false)
+  (define-fun c861 () Bool
+    false)
+  (define-fun c845 () Bool
+    false)
+  (define-fun c985 () Bool
+    false)
+  (define-fun c848 () Bool
+    false)
+  (define-fun c537 () Bool
+    false)
+  (define-fun c384 () Bool
+    false)
+  (define-fun c151 () Bool
+    false)
+  (define-fun c593 () Bool
+    false)
+  (define-fun c681 () Bool
+    true)
+  (define-fun c515 () Bool
+    false)
+  (define-fun c542 () Bool
+    false)
+  (define-fun c298 () Bool
+    false)
+  (define-fun c826 () Bool
+    false)
+  (define-fun c164 () Bool
+    false)
+  (define-fun c386 () Bool
+    false)
+  (define-fun c318 () Bool
+    true)
+  (define-fun c267 () Bool
+    false)
+  (define-fun c364 () Bool
+    false)
+  (define-fun c183 () Bool
+    true)
+  (define-fun c167 () Bool
+    false)
+  (define-fun c429 () Bool
+    false)
+  (define-fun c339 () Bool
+    false)
+  (define-fun c629 () Bool
+    false)
+  (define-fun c527 () Bool
+    false)
+  (define-fun c438 () Bool
+    false)
+  (define-fun c754 () Bool
+    false)
+  (define-fun c288 () Bool
+    false)
+  (define-fun c242 () Bool
+    false)
+  (define-fun c884 () Bool
+    false)
+  (define-fun c133 () Bool
+    false)
+  (define-fun c445 () Bool
+    false)
+  (define-fun c119 () Bool
+    false)
+  (define-fun c396 () Bool
+    false)
+  (define-fun c587 () Bool
+    false)
+  (define-fun c718 () Bool
+    false)
+  (define-fun c876 () Bool
+    false)
+  (define-fun c746 () Bool
+    false)
+  (define-fun c195 () Bool
+    false)
+  (define-fun c289 () Bool
+    false)
+  (define-fun c751 () Bool
+    true)
+  (define-fun c176 () Bool
+    false)
+  (define-fun c359 () Bool
+    false)
+  (define-fun c426 () Bool
+    false)
+  (define-fun c512 () Bool
+    false)
+  (define-fun c697 () Bool
+    false)
+  (define-fun c678 () Bool
+    false)
+  (define-fun c714 () Bool
+    false)
+  (define-fun c145 () Bool
+    false)
+  (define-fun c178 () Bool
+    false)
+  (define-fun c773 () Bool
+    false)
+  (define-fun c331 () Bool
+    false)
+  (define-fun c129 () Bool
+    false)
+  (define-fun c896 () Bool
+    false)
+  (define-fun c254 () Bool
+    false)
+  (define-fun c349 () Bool
+    false)
+  (define-fun c534 () Bool
+    false)
+  (define-fun c922 () Bool
+    false)
+  (define-fun c911 () Bool
+    false)
+  (define-fun c518 () Bool
+    false)
+  (define-fun c535 () Bool
+    false)
+  (define-fun c466 () Bool
+    false)
+  (define-fun c586 () Bool
+    false)
+  (define-fun c616 () Bool
+    false)
+  (define-fun c222 () Bool
+    true)
+  (define-fun c264 () Bool
+    false)
+  (define-fun c676 () Bool
+    false)
+  (define-fun c769 () Bool
+    false)
+  (define-fun c255 () Bool
+    true)
+  (define-fun c788 () Bool
+    false)
+  (define-fun c381 () Bool
+    false)
+  (define-fun c973 () Bool
+    true)
+  (define-fun c131 () Bool
+    false)
+  (define-fun c299 () Bool
+    false)
+  (define-fun c682 () Bool
+    false)
+  (define-fun c915 () Bool
+    false)
+  (define-fun c991 () Bool
+    false)
+  (define-fun c819 () Bool
+    false)
+  (define-fun c917 () Bool
+    false)
+  (define-fun c987 () Bool
+    true)
+  (define-fun c798 () Bool
+    false)
+  (define-fun c172 () Bool
+    false)
+  (define-fun c742 () Bool
+    false)
+  (define-fun c927 () Bool
+    false)
+  (define-fun c414 () Bool
+    false)
+  (define-fun c658 () Bool
+    false)
+  (define-fun c728 () Bool
+    true)
+  (define-fun c623 () Bool
+    false)
+  (define-fun c944 () Bool
+    false)
+  (define-fun c231 () Bool
+    false)
+  (define-fun c457 () Bool
+    true)
+  (define-fun c355 () Bool
+    false)
+  (define-fun c171 () Bool
+    false)
+  (define-fun c753 () Bool
+    false)
+  (define-fun c745 () Bool
+    false)
+  (define-fun c785 () Bool
+    false)
+  (define-fun c739 () Bool
+    false)
+  (define-fun c194 () Bool
+    false)
+  (define-fun c624 () Bool
+    false)
+  (define-fun c393 () Bool
+    false)
+  (define-fun c722 () Bool
+    false)
+  (define-fun c648 () Bool
+    false)
+  (define-fun c143 () Bool
+    false)
+  (define-fun c246 () Bool
+    false)
+  (define-fun c263 () Bool
+    false)
+  (define-fun c816 () Bool
+    false)
+  (define-fun c669 () Bool
+    false)
+  (define-fun c529 () Bool
+    false)
+  (define-fun c729 () Bool
+    false)
+  (define-fun c332 () Bool
+    false)
+  (define-fun c385 () Bool
+    false)
+  (define-fun c314 () Bool
+    false)
+  (define-fun c352 () Bool
+    false)
+  (define-fun c533 () Bool
+    false)
+  (define-fun c394 () Bool
+    false)
+  (define-fun c863 () Bool
+    false)
+  (define-fun c313 () Bool
+    false)
+  (define-fun c357 () Bool
+    false)
+  (define-fun c112 () Bool
+    false)
+  (define-fun c374 () Bool
+    false)
+  (define-fun c937 () Bool
+    false)
+  (define-fun c159 () Bool
+    false)
+  (define-fun c972 () Bool
+    false)
+  (define-fun c939 () Bool
+    false)
+  (define-fun c675 () Bool
+    false)
+  (define-fun c771 () Bool
+    false)
+  (define-fun c488 () Bool
+    false)
+  (define-fun c217 () Bool
+    false)
+  (define-fun c564 () Bool
+    false)
+  (define-fun c652 () Bool
+    false)
+  (define-fun c496 () Bool
+    false)
+  (define-fun c634 () Bool
+    false)
+  (define-fun c336 () Bool
+    false)
+  (define-fun c453 () Bool
+    false)
+  (define-fun c672 () Bool
+    false)
+  (define-fun c297 () Bool
+    false)
+  (define-fun c734 () Bool
+    true)
+  (define-fun c895 () Bool
+    false)
+  (define-fun c497 () Bool
+    false)
+  (define-fun c738 () Bool
+    false)
+  (define-fun c961 () Bool
+    false)
+  (define-fun c641 () Bool
+    false)
+  (define-fun c238 () Bool
+    false)
+  (define-fun c889 () Bool
+    false)
+  (define-fun c872 () Bool
+    false)
+  (define-fun c382 () Bool
+    false)
+  (define-fun c995 () Bool
+    false)
+  (define-fun c169 () Bool
+    false)
+  (define-fun c219 () Bool
+    false)
+  (define-fun c574 () Bool
+    false)
+  (define-fun c711 () Bool
+    false)
+  (define-fun c777 () Bool
+    false)
+  (define-fun c376 () Bool
+    false)
+  (define-fun c577 () Bool
+    false)
+  (define-fun c197 () Bool
+    true)
+  (define-fun c342 () Bool
+    false)
+  (define-fun c578 () Bool
+    false)
+  (define-fun c124 () Bool
+    false)
+  (define-fun c316 () Bool
+    false)
+  (define-fun c358 () Bool
+    false)
+  (define-fun c472 () Bool
+    true)
+  (define-fun c588 () Bool
+    false)
+  (define-fun c866 () Bool
+    true)
+  (define-fun c838 () Bool
+    false)
+  (define-fun c979 () Bool
+    false)
+  (define-fun c568 () Bool
+    false)
+  (define-fun c273 () Bool
+    false)
+  (define-fun c971 () Bool
+    false)
+  (define-fun c743 () Bool
+    false)
+  (define-fun c111 () Bool
+    true)
+  (define-fun c174 () Bool
+    false)
+  (define-fun c543 () Bool
+    false)
+  (define-fun c268 () Bool
+    false)
+  (define-fun c953 () Bool
+    false)
+  (define-fun c792 () Bool
+    false)
+  (define-fun c181 () Bool
+    false)
+  (define-fun c531 () Bool
+    false)
+  (define-fun c781 () Bool
+    false)
+  (define-fun c462 () Bool
+    false)
+  (define-fun c491 () Bool
+    false)
+  (define-fun c993 () Bool
+    false)
+  (define-fun c926 () Bool
+    false)
+  (define-fun c484 () Bool
+    true)
+  (define-fun c834 () Bool
+    false)
+  (define-fun c597 () Bool
+    false)
+  (define-fun c615 () Bool
+    false)
+  (define-fun c117 () Bool
+    false)
+  (define-fun c215 () Bool
+    false)
+  (define-fun c679 () Bool
+    false)
+  (define-fun c326 () Bool
+    false)
+  (define-fun c778 () Bool
+    false)
+  (define-fun c155 () Bool
+    false)
+  (define-fun c897 () Bool
+    false)
+  (define-fun c391 () Bool
+    false)
+  (define-fun c229 () Bool
+    false)
+  (define-fun c716 () Bool
+    true)
+  (define-fun c275 () Bool
+    false)
+  (define-fun c179 () Bool
+    false)
+  (define-fun c671 () Bool
+    false)
+  (define-fun c883 () Bool
+    false)
+  (define-fun c787 () Bool
+    false)
+  (define-fun c949 () Bool
+    false)
+  (define-fun c913 () Bool
+    false)
+  (define-fun c469 () Bool
+    false)
+  (define-fun c343 () Bool
+    false)
+  (define-fun c691 () Bool
+    false)
+  (define-fun c558 () Bool
+    false)
+  (define-fun c361 () Bool
+    false)
+  (define-fun c619 () Bool
+    false)
+  (define-fun c449 () Bool
+    false)
+  (define-fun c966 () Bool
+    false)
+  (define-fun c547 () Bool
+    false)
+  (define-fun c592 () Bool
+    false)
+  (define-fun c596 () Bool
+    false)
+  (define-fun c511 () Bool
+    false)
+  (define-fun c516 () Bool
+    false)
+  (define-fun c146 () Bool
+    false)
+  (define-fun c415 () Bool
+    false)
+  (define-fun c919 () Bool
+    false)
+  (define-fun c435 () Bool
+    false)
+  (define-fun c655 () Bool
+    false)
+  (define-fun c493 () Bool
+    true)
+  (define-fun c114 () Bool
+    false)
+  (define-fun c442 () Bool
+    false)
+  (define-fun c439 () Bool
+    false)
+  (define-fun c741 () Bool
+    false)
+  (define-fun c248 () Bool
+    false)
+  (define-fun c824 () Bool
+    false)
+  (define-fun c684 () Bool
+    false)
+  (define-fun c983 () Bool
+    false)
+  (define-fun c851 () Bool
+    false)
+  (define-fun c281 () Bool
+    false)
+  (define-fun c156 () Bool
+    false)
+  (define-fun c931 () Bool
+    true)
+  (define-fun c811 () Bool
+    false)
+  (define-fun c992 () Bool
+    false)
+  (define-fun c842 () Bool
+    true)
+  (define-fun c941 () Bool
+    false)
+  (define-fun c735 () Bool
+    false)
+  (define-fun c464 () Bool
+    false)
+  (define-fun c471 () Bool
+    false)
+  (define-fun c628 () Bool
+    false)
+  (define-fun c413 () Bool
+    false)
+  (define-fun c639 () Bool
+    false)
+  (define-fun c579 () Bool
+    false)
+  (define-fun c976 () Bool
+    false)
+  (define-fun c552 () Bool
+    false)
+  (define-fun c483 () Bool
+    false)
+  (define-fun c582 () Bool
+    false)
+  (define-fun c618 () Bool
+    false)
+  (define-fun c821 () Bool
+    false)
+  (define-fun c986 () Bool
+    false)
+  (define-fun c138 () Bool
+    false)
+  (define-fun c148 () Bool
+    false)
+  (define-fun c121 () Bool
+    false)
+  (define-fun c292 () Bool
+    false)
+  (define-fun c474 () Bool
+    false)
+  (define-fun c461 () Bool
+    false)
+  (define-fun c427 () Bool
+    false)
+  (define-fun c584 () Bool
+    false)
+  (define-fun c752 () Bool
+    false)
+  (define-fun c852 () Bool
+    false)
+  (define-fun c837 () Bool
+    false)
+  (define-fun c458 () Bool
+    false)
+  (define-fun c311 () Bool
+    false)
+  (define-fun c756 () Bool
+    false)
+  (define-fun c793 () Bool
+    false)
+  (define-fun c489 () Bool
+    false)
+  (define-fun c253 () Bool
+    false)
+  (define-fun c277 () Bool
+    false)
+  (define-fun c363 () Bool
+    false)
+  (define-fun c581 () Bool
+    false)
+  (define-fun c767 () Bool
+    false)
+  (define-fun c923 () Bool
+    false)
+  (define-fun c663 () Bool
+    false)
+  (define-fun c395 () Bool
+    false)
+  (define-fun c569 () Bool
+    true)
+  (define-fun c699 () Bool
+    true)
+  (define-fun c338 () Bool
+    false)
+  (define-fun c978 () Bool
+    false)
+  (define-fun c856 () Bool
+    false)
+  (define-fun c965 () Bool
+    false)
+  (define-fun c696 () Bool
+    false)
+  (define-fun c135 () Bool
+    false)
+  (define-fun c916 () Bool
+    false)
+  (define-fun c521 () Bool
+    false)
+  (define-fun c234 () Bool
+    false)
+  (define-fun c317 () Bool
+    false)
+  (define-fun c645 () Bool
+    false)
+  (define-fun c715 () Bool
+    false)
+  (define-fun c755 () Bool
+    false)
+  (define-fun c818 () Bool
+    false)
+  (define-fun c825 () Bool
+    false)
+  (define-fun c545 () Bool
+    false)
+  (define-fun c538 () Bool
+    false)
+  (define-fun c869 () Bool
+    false)
+  (define-fun c245 () Bool
+    false)
+  (define-fun c549 () Bool
+    false)
+  (define-fun c347 () Bool
+    false)
+  (define-fun c933 () Bool
+    false)
+  (define-fun c271 () Bool
+    false)
+  (define-fun c232 () Bool
+    false)
+  (define-fun c182 () Bool
+    false)
+  (define-fun c653 () Bool
+    false)
+  (define-fun c846 () Bool
+    false)
+  (define-fun c132 () Bool
+    false)
+  (define-fun c239 () Bool
+    false)
+  (define-fun c975 () Bool
+    false)
+  (define-fun c272 () Bool
+    false)
+  (define-fun c589 () Bool
+    false)
+  (define-fun c956 () Bool
+    false)
+  (define-fun c794 () Bool
+    false)
+  (define-fun c899 () Bool
+    false)
+  (define-fun c296 () Bool
+    false)
+  (define-fun c858 () Bool
+    false)
+  (define-fun c212 () Bool
+    false)
+  (define-fun c482 () Bool
+    false)
+  (define-fun c662 () Bool
+    true)
+  (define-fun c631 () Bool
+    false)
+  (define-fun c562 () Bool
+    false)
+  (define-fun c142 () Bool
+    false)
+  (define-fun c115 () Bool
+    false)
+  (define-fun c844 () Bool
+    false)
+  (define-fun c594 () Bool
+    false)
+  (define-fun c928 () Bool
+    false)
+  (define-fun c626 () Bool
+    false)
+  (define-fun c636 () Bool
+    false)
+  (define-fun c685 () Bool
+    false)
+  (define-fun c282 () Bool
+    false)
+  (define-fun c283 () Bool
+    false)
+  (define-fun c566 () Bool
+    false)
+  (define-fun c613 () Bool
+    false)
+  (define-fun c625 () Bool
+    true)
+  (define-fun c656 () Bool
+    true)
+  (define-fun c295 () Bool
+    false)
+  (define-fun c725 () Bool
+    false)
+  (define-fun c796 () Bool
+    false)
+  (define-fun c334 () Bool
+    false)
+  (define-fun c424 () Bool
+    false)
+  (define-fun c551 () Bool
+    false)
+  (define-fun c344 () Bool
+    false)
+  (define-fun c812 () Bool
+    false)
+  (define-fun c514 () Bool
+    false)
+  (define-fun c576 () Bool
+    true)
+  (define-fun c857 () Bool
+    false)
+  (define-fun c918 () Bool
+    false)
+  (define-fun c867 () Bool
+    false)
+  (define-fun c571 () Bool
+    false)
+  (define-fun c567 () Bool
+    false)
+  (define-fun c776 () Bool
+    false)
+  (define-fun c486 () Bool
+    false)
+  (define-fun c467 () Bool
+    false)
+  (define-fun c977 () Bool
+    false)
+  (define-fun c187 () Bool
+    false)
+  (define-fun c356 () Bool
+    false)
+  (define-fun c388 () Bool
+    false)
+  (define-fun c192 () Bool
+    false)
+  (define-fun c399 () Bool
+    false)
+  (define-fun c233 () Bool
+    false)
+  (define-fun c694 () Bool
+    false)
+  (define-fun c795 () Bool
+    true)
+  (define-fun c434 () Bool
+    false)
+  (define-fun c847 () Bool
+    false)
+  (define-fun c412 () Bool
+    false)
+  (define-fun c252 () Bool
+    false)
+  (define-fun c373 () Bool
+    false)
+  (define-fun c341 () Bool
+    false)
+  (define-fun c951 () Bool
+    false)
+  (define-fun c797 () Bool
+    false)
+  (define-fun c163 () Bool
+    false)
+  (define-fun c446 () Bool
+    false)
+  (define-fun c444 () Bool
+    false)
+  (define-fun c689 () Bool
+    false)
+  (define-fun c287 () Bool
+    false)
+  (define-fun c967 () Bool
+    false)
+  (define-fun c443 () Bool
+    false)
+  (define-fun c598 () Bool
+    true)
+  (define-fun c759 () Bool
+    false)
+  (define-fun c241 () Bool
+    false)
+  (define-fun c269 () Bool
+    false)
+  (define-fun c329 () Bool
+    false)
+  (define-fun c886 () Bool
+    false)
+  (define-fun c276 () Bool
+    false)
+  (define-fun c784 () Bool
+    false)
+  (define-fun c757 () Bool
+    false)
+  (define-fun c244 () Bool
+    false)
+  (define-fun c258 () Bool
+    false)
+  (define-fun c321 () Bool
+    false)
+  (define-fun c136 () Bool
+    false)
+  (define-fun c455 () Bool
+    false)
+  (define-fun c674 () Bool
+    false)
+  (define-fun c938 () Bool
+    false)
+  (define-fun c557 () Bool
+    false)
+  (define-fun c323 () Bool
+    false)
+  (define-fun c475 () Bool
+    false)
+  (define-fun c575 () Bool
+    false)
+  (define-fun c528 () Bool
+    false)
+  (define-fun c766 () Bool
+    false)
+  (define-fun c955 () Bool
+    false)
+  (define-fun c113 () Bool
+    false)
+  (define-fun c188 () Bool
+    false)
+  (define-fun c559 () Bool
+    false)
+  (define-fun c524 () Bool
+    false)
+  (define-fun c324 () Bool
+    true)
+  (define-fun c695 () Bool
+    false)
+  (define-fun c499 () Bool
+    false)
+  (define-fun c134 () Bool
+    false)
+  (define-fun c573 () Bool
+    false)
+  (define-fun c285 () Bool
+    false)
+  (define-fun c732 () Bool
+    false)
+  (define-fun c441 () Bool
+    false)
+  (define-fun c627 () Bool
+    false)
+  (define-fun c932 () Bool
+    false)
+  (define-fun c984 () Bool
+    false)
+  (define-fun c221 () Bool
+    false)
+  (define-fun c643 () Bool
+    true)
+  (define-fun c251 () Bool
+    false)
+  (define-fun c637 () Bool
+    false)
+  (define-fun c417 () Bool
+    false)
+  (define-fun c664 () Bool
+    false)
+  (define-fun c724 () Bool
+    false)
+  (define-fun c668 () Bool
+    false)
+  (define-fun c688 () Bool
+    false)
+  (define-fun c572 () Bool
+    false)
+  (define-fun c198 () Bool
+    false)
+  (define-fun c162 () Bool
+    false)
+  (define-fun c346 () Bool
+    true)
+  (define-fun c418 () Bool
+    false)
+  (define-fun c284 () Bool
+    false)
+  (define-fun c173 () Bool
+    false)
+  (define-fun c224 () Bool
+    false)
+  (define-fun c774 () Bool
+    false)
+  (define-fun c748 () Bool
+    false)
+  (define-fun c683 () Bool
+    false)
+  (define-fun c969 () Bool
+    false)
+  (define-fun c849 () Bool
+    false)
+  (define-fun c127 () Bool
+    false)
+  (define-fun c166 () Bool
+    false)
+  (define-fun c226 () Bool
+    false)
+  (define-fun c337 () Bool
+    false)
+  (define-fun c646 () Bool
+    false)
+  (define-fun c744 () Bool
+    false)
+  (define-fun c665 () Bool
+    false)
+  (define-fun c864 () Bool
+    false)
+  (define-fun c165 () Bool
+    false)
+  (define-fun c968 () Bool
+    false)
+  (define-fun c929 () Bool
+    true)
+  (define-fun c422 () Bool
+    false)
+  (define-fun c477 () Bool
+    false)
+  (define-fun c122 () Bool
+    false)
+  (define-fun c154 () Bool
+    false)
+  (define-fun c762 () Bool
+    false)
+  (define-fun c468 () Bool
+    false)
+  (define-fun c868 () Bool
+    false)
+  (define-fun c495 () Bool
+    false)
+  (define-fun c583 () Bool
+    false)
+  (define-fun c642 () Bool
+    false)
+  (define-fun c367 () Bool
+    true)
+  (define-fun c981 () Bool
+    false)
+  (define-fun c157 () Bool
+    false)
+  (define-fun c423 () Bool
+    false)
+  (define-fun c832 () Bool
+    false)
+  (define-fun c989 () Bool
+    false)
+  (define-fun c934 () Bool
+    false)
+  (define-fun c964 () Bool
+    true)
+  (define-fun c974 () Bool
+    false)
+  (define-fun c758 () Bool
+    false)
+  (define-fun c541 () Bool
+    true)
+  (define-fun c487 () Bool
+    false)
+  (define-fun c522 () Bool
+    false)
+  (define-fun c996 () Bool
+    true)
+  (define-fun c998 () Bool
+    false)
+  (define-fun c498 () Bool
+    false)
+  (define-fun c152 () Bool
+    true)
+  (define-fun c175 () Bool
+    true)
+  (define-fun c371 () Bool
+    true)
+  (define-fun c353 () Bool
+    true)
+  (define-fun c912 () Bool
+    true)
+  (define-fun c891 () Bool
+    true)
+  (define-fun c294 () Bool
+    true)
+  (define-fun c286 () Bool
+    true)
+  (define-fun c585 () Bool
+    true)
+  (define-fun c677 () Bool
+    true)
+  (define-fun c779 () Bool
+    true)
+  (define-fun c614 () Bool
+    true)
+  (define-fun c139 () Bool
+    true)
+  (define-fun c833 () Bool
+    true)
+  (define-fun c815 () Bool
+    true)
+  (define-fun c261 () Bool
+    true)
+  (define-fun c747 () Bool
+    true)
+  (define-fun c448 () Bool
+    true)
+  (define-fun c554 () Bool
+    true)
+  (define-fun c859 () Bool
+    true)
+  (define-fun c126 () Bool
+    true)
+  (define-fun c335 () Bool
+    true)
+  (define-fun c532 () Bool
+    true)
+)

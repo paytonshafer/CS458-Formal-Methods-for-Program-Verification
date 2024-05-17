@@ -1,0 +1,162 @@
+For each of the following problems, make the requested assertions in Z3 and explain the resulting output.  In each problem, you should declare a sort called Person.  You should also have a relation M(x,y) that is true whenever x is the mother of y (Please don't do this backwards; that causes confusion.)  For Problem 2 you also need to declare a function Age which will determine a person's age, and a person named Ann.
+
+If the result is SAT, you need to explain the model.  If the result is UNSAT, have Z3 give the unsat core.  If z3 does not seem to be able to solve it, say why you think that is.
+
+It would be easier to grade if you put all this in one file, and use pop and push.  That is helpful but not required. 
+
+1. Assert the following:
+
+    A. Somebody has a mother
+
+    B. Everybody has a mother who is not themself
+
+    C. Nobody can have two mothers
+
+    D. Somebody has at least two children
+
+2. Assert the following:
+
+    A. Somebody has a mother
+
+    B. Nobody can have two mothers
+
+    C. Mothers are older than their children.
+
+    D. Everybody who is not Ann has a mother. (This does not say whether Ann has a mother.)
+
+    E. Somebody has at least two children
+
+    F. Age is positive
+
+3. Assert the following:
+
+    A. Somebody is the mother of everybody
+
+    B. Nobody has a mother
+
+    C. Somebody has no mother
+
+4 Assert the following:
+
+    A. Somebody has a mother
+
+    B. Everybody has a mother
+
+    C. Nobody can be their own maternal grandmother
+
+
+OUTPUTS:
+1. 
+sat
+(
+  ;; universe for Person:
+  ;;   Person!val!0 Person!val!4 Person!val!3 Person!val!2 Person!val!1 
+  ;; -----------
+  ;; definitions for universe elements:
+  (declare-fun Person!val!0 () Person)
+  (declare-fun Person!val!4 () Person)
+  (declare-fun Person!val!3 () Person)
+  (declare-fun Person!val!2 () Person)
+  (declare-fun Person!val!1 () Person)
+  ;; cardinality constraint:
+  (forall ((x Person))
+          (or (= x Person!val!0)
+              (= x Person!val!4)
+              (= x Person!val!3)
+              (= x Person!val!2)
+              (= x Person!val!1)))
+  ;; -----------
+  (define-fun M ((x!0 Person) (x!1 Person)) bool
+    (or (and (= x!0 Person!val!2)
+             (not (= x!0 Person!val!4))
+             (not (= x!0 Person!val!1))
+             (= x!1 Person!val!3)
+             (not (= x!1 Person!val!2))
+             (not (= x!1 Person!val!4))
+             (not (= x!1 Person!val!1)))
+        (and (= x!0 Person!val!2)
+             (not (= x!0 Person!val!4))
+             (not (= x!0 Person!val!1))
+             (= x!1 Person!val!4)
+             (not (= x!1 Person!val!1)))
+        (and (not (= x!0 Person!val!3))
+             (not (= x!0 Person!val!2))
+             (not (= x!0 Person!val!4))
+             (not (= x!0 Person!val!1))
+             (= x!1 Person!val!1))))
+)
+
+2. 
+sat
+(
+  ;; universe for Person:
+  ;;   Person!val!0 Person!val!4 Person!val!3 Person!val!2 Person!val!1 
+  ;; -----------
+  ;; definitions for universe elements:
+  (declare-fun Person!val!0 () Person)
+  (declare-fun Person!val!4 () Person)
+  (declare-fun Person!val!3 () Person)
+  (declare-fun Person!val!2 () Person)
+  (declare-fun Person!val!1 () Person)
+  ;; cardinality constraint:
+  (forall ((x Person))
+          (or (= x Person!val!0)
+              (= x Person!val!4)
+              (= x Person!val!3)
+              (= x Person!val!2)
+              (= x Person!val!1)))
+  ;; -----------
+  (define-fun ann () Person
+    Person!val!4)
+  (define-fun M ((x!0 Person) (x!1 Person)) bool
+    (or (and (= x!0 Person!val!4)
+             (not (= x!0 Person!val!2))
+             (= x!1 Person!val!3)
+             (not (= x!1 Person!val!4))
+             (not (= x!1 Person!val!2)))
+        (and (= x!0 Person!val!4)
+             (not (= x!0 Person!val!2))
+             (not (= x!1 Person!val!1))
+             (not (= x!1 Person!val!3))
+             (not (= x!1 Person!val!4))
+             (not (= x!1 Person!val!2)))
+        (and (= x!0 Person!val!4)
+             (not (= x!0 Person!val!2))
+             (= x!1 Person!val!2))
+        (and (not (= x!0 Person!val!1))
+             (not (= x!0 Person!val!3))
+             (not (= x!0 Person!val!4))
+             (not (= x!0 Person!val!2))
+             (= x!1 Person!val!1)
+             (not (= x!1 Person!val!3))
+             (not (= x!1 Person!val!4))
+             (not (= x!1 Person!val!2)))))
+  (define-fun Age ((x!0 Person)) Int
+    (let ((a!1 (ite (and (= x!0 Person!val!1)
+                         (not (= x!0 Person!val!3))
+                         (not (= x!0 Person!val!4))
+                         (not (= x!0 Person!val!2)))
+                    1
+                    15)))
+    (let ((a!2 (ite (and (not (= x!0 Person!val!1))
+                         (not (= x!0 Person!val!3))
+                         (not (= x!0 Person!val!4))
+                         (not (= x!0 Person!val!2)))
+                    2
+                    a!1)))
+    (let ((a!3 (ite (and (= x!0 Person!val!4) (not (= x!0 Person!val!2)))
+                    7
+                    (ite (= x!0 Person!val!2) 3 a!2))))
+      (ite (and (= x!0 Person!val!3)
+                (not (= x!0 Person!val!4))
+                (not (= x!0 Person!val!2)))
+           4
+           a!3)))))
+)
+
+3. 
+unsat
+(mother-of-everyone nobody-has-mother)
+
+4.
+unknown

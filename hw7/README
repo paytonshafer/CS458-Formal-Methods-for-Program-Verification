@@ -1,0 +1,7 @@
+For all of the following, give preconditions, postconditions and loop invariants so that Dafny will verify it.  I attached a dafny file for each problem. 
+
+1. This method passes an array of integers and the size of the array as parameters, where size could be less than the actual length.  It modifies the array so that every element is replaced by its absolute value.  You need to verify that this works correctly.  Don't forget that you sometimes have to specify that things have not changed.
+
+2. This method takes an array of integers and returns true if the array contains a duplicate.  You need to verify it.
+
+3. This method sorts an array of integers using the Selection Sort algorithm  It calls another method called MaxIndex which returns the index of the largest number in an array.  You need to verify both methods.  I have given predicates sorted and all_smaller, which we will talk about in class.  The predicate all_smaller applies in the special case of partitioned where there is only one element in the second part.  Feel free to use my predicates.

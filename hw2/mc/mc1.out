@@ -1,0 +1,51 @@
+sat
+(
+  (define-fun h32 () Bool
+    true)
+  (define-fun v41 () Bool
+    false)
+  (define-fun h21 () Bool
+    false)
+  (define-fun v11 () Bool
+    true)
+  (define-fun v42 () Bool
+    false)
+  (define-fun h23 () Bool
+    true)
+  (define-fun h13 () Bool
+    false)
+  (define-fun v32 () Bool
+    false)
+  (define-fun v12 () Bool
+    false)
+  (define-fun h11 () Bool
+    false)
+  (define-fun v21 () Bool
+    true)
+  (define-fun v31 () Bool
+    false)
+  (define-fun h22 () Bool
+    false)
+  (define-fun h12 () Bool
+    false)
+  (define-fun h33 () Bool
+    false)
+  (define-fun v22 () Bool
+    false)
+  (define-fun h31 () Bool
+    true)
+  (define-fun v13 () Bool
+    true)
+  (define-fun v33 () Bool
+    false)
+  (define-fun v43 () Bool
+    true)
+  (define-fun h14 () Bool
+    false)
+  (define-fun h34 () Bool
+    false)
+  (define-fun v23 () Bool
+    false)
+  (define-fun h24 () Bool
+    false)
+)
