@@ -1,0 +1,43 @@
+MODULE main
+
+VAR
+
+i: process person(v.fork);
+
+v: process person(i.fork);
+
+LTLSPEC -- liveness
+(G ((i.hunger) -> F (i.fork))) & (G ((v.hunger) -> F (v.fork)))
+
+MODULE person(other-fork)
+
+VAR
+
+hunger : boolean; -- True for hungry and False for not hungry
+fork : boolean; -- True for holding and False for not holding
+
+ASSIGN
+
+init(hunger) := FALSE;
+
+init(fork) := FALSE;
+
+next(hunger) := 
+case
+    hunger & fork : FALSE; -- holding fork and hungry -> still hold fork and NOT hungry
+    !fork & hunger: TRUE; -- no fork then does not pick up the fork and remains hungry if already hungry
+    (!fork) : {TRUE, FALSE}; -- otherwise may become hungry or not become hungry.
+    TRUE: hunger;
+esac;
+
+next(fork) :=
+case
+    !hunger & fork : FALSE; -- holding fork and NOT hungry -> not holding fork and may or may not be hungry
+    (!fork & !other-fork) & hunger : TRUE; -- No one has the fork and hungery -> hold the fork and remaim hungry
+    TRUE: fork ;
+esac;
+
+FAIRNESS
+running
+
+-- See file "part1.out" for output and explination of output

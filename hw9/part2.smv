@@ -1,0 +1,63 @@
+MODULE main
+
+VAR
+
+i: process person(v.fork, priority, TRUE);
+
+v: process person(i.fork, priority, FALSE);
+
+priority : boolean; -- TRUE for i and FALSE for v
+
+ASSIGN
+
+init(priority) := {TRUE, FALSE};
+
+LTLSPEC -- liveness
+(G ((i.hunger) -> F (i.fork))) & (G ((v.hunger) -> F (v.fork)))
+
+
+MODULE person(other-fork, priority, my-priority)
+
+VAR
+
+hunger : boolean; -- True for hungry and False for not hungry
+fork : boolean; -- True for holding and False for not holding
+
+ASSIGN
+
+init(hunger) := FALSE;
+
+init(fork) := FALSE;
+
+next(hunger) := 
+case
+    hunger & fork : FALSE; -- holding fork and hungry -> still hold fork and NOT hungry
+    !fork & hunger: TRUE; -- no fork then does not pick up the fork and remains hungry if already hungry
+    (!fork) : {TRUE, FALSE}; -- otherwise may become hungry or not become hungry.
+    TRUE : hunger;
+esac;
+
+next(fork) :=
+case
+    !hunger & fork : FALSE; -- holding fork and NOT hungry -> not holding fork and may or may not be hungry
+    (!fork & !other-fork) & hunger & (priority = my-priority) : TRUE; -- No one has the fork and hungery -> hold the fork and remaim hungry
+    TRUE : fork ;
+esac;
+
+next(priority) :=
+case
+    (priority = my-priority) & !hunger & fork : !priority;
+    TRUE : priority;
+esac;
+
+FAIRNESS
+running
+
+-- The above returns output1
+-- See file "part2.out" for output1 and explination of output1
+
+FAIRNESS
+hunger
+
+-- Adding the second fairness gives us a new output, output2
+-- See file "part2.out" for output2 and explination of output2

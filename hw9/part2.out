@@ -1,0 +1,87 @@
+Payton Shafer   CS458:HW9: Part 2 Output
+
+OUTPUT1 (BEFORE SECOND FAIRNESS CONSTRAINT):
+
+-- specification ( G (i.hunger ->  F i.fork) &  G (v.hunger ->  F v.fork))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 1.1 <-
+    i.hunger = FALSE
+    i.fork = FALSE
+    v.hunger = FALSE
+    v.fork = FALSE
+    priority = TRUE
+  -> Input: 1.2 <-
+    _process_selector_ = i
+    running = FALSE
+    v.running = FALSE
+    i.running = TRUE
+  -> State: 1.2 <-
+  -> Input: 1.3 <-
+    _process_selector_ = v
+    v.running = TRUE
+    i.running = FALSE
+  -> State: 1.3 <-
+  -> Input: 1.4 <-
+  -- Loop starts here
+  -> State: 1.4 <-
+    v.hunger = TRUE
+  -> Input: 1.5 <-
+    _process_selector_ = main
+    running = TRUE
+    v.running = FALSE
+  -- Loop starts here
+  -> State: 1.5 <-
+  -> Input: 1.6 <-
+    _process_selector_ = i
+    running = FALSE
+    i.running = TRUE
+  -- Loop starts here
+  -> State: 1.6 <-
+  -> Input: 1.7 <-
+    _process_selector_ = v
+    v.running = TRUE
+    i.running = FALSE
+  -- Loop starts here
+  -> State: 1.7 <-
+  -> Input: 1.8 <-
+    _process_selector_ = main
+    running = TRUE
+    v.running = FALSE
+  -> State: 1.8 <-
+
+MEANING OF OUTPUT1:
+1.1 - All False except for priority = True (i has priority)
+
+1.2 (IN) - Choose to run i
+1.2 - No changes
+
+1.3 (IN) - Choose to run v
+1.3 - No changes
+
+1.4 - v becomes hungry (Loop starts here)
+
+1.5 (IN) - Stop running v
+1.5 - No changes (Loop starts here)
+
+1.6 (IN) - Choose to run i
+1.6 - No changes (Loop starts here)
+
+1.7 (IN) - Choose to run v (stop i)
+1.7 - No changes (Loop starts here)
+
+1.8 (IN) - Stop rinning v
+1.8 - No changes
+
+This means that v will become hungry and never be able to get the fork.
+This is due to the fact that i starts with priority but never is given the chance to 
+get hungry, pick up the fork, and give v priority. Since v never gets priority 
+v has no chance to get the fork. Thus v is hungry but never gets the fork.
+
+OUTPUT2 (AFTER SECOND FAIRNESS CONSTRAINT):
+
+-- specification ( G (i.hunger ->  F i.fork) &  G (v.hunger ->  F v.fork))  is true
+
+MEANING OF OUTPUT2:
+This output means the model and constraints I gave were enough to always satisfy the above specification
